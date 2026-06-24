@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>关于 ayx · 一份简明指南</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #fafafa;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #222;
+      line-height: 1.7;
+      padding: 2rem 1.25rem;
+    }
+
+    .page {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* 开场短句 */
+    .opener {
+      font-size: 1rem;
+      color: #777;
+      letter-spacing: 0.02em;
+      margin-bottom: 2.5rem;
+      border-left: 3px solid #ccc;
+      padding-left: 1rem;
+    }
+    .opener span {
+      display: block;
+      font-weight: 350;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 450;
+      letter-spacing: -0.01em;
+      margin-bottom: 1.8rem;
+      color: #1a1a1a;
+      word-break: break-word;
+    }
+
+    .intro-text {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 2rem;
+    }
+
+    .intro-text a {
+      color: #2563eb;
+      text-decoration: none;
+      border-bottom: 1px solid #b3cff5;
+    }
+    .intro-text a:hover {
+      border-bottom-color: #2563eb;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 450;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 0.5rem;
+      margin: 2.5rem 0 1.5rem 0;
+      color: #1e1e1e;
+    }
+
+    /* 特点列表 —— 叙述式 */
+    .feature-list {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+    .feature-list li {
+      margin-bottom: 1.25rem;
+      padding-left: 0.5rem;
+      border-left: 2px solid #ddd;
+      padding-left: 1rem;
+    }
+    .feature-list li strong {
+      font-weight: 500;
+      color: #111;
+    }
+
+    .note-box {
+      background: #f0f0f0;
+      border-radius: 6px;
+      padding: 1.25rem 1.5rem;
+      margin: 2.5rem 0;
+      font-size: 0.95rem;
+      color: #2c2c2c;
+    }
+    .note-box strong {
+      font-weight: 500;
+    }
+
+    .faq-item {
+      margin-bottom: 1.75rem;
+    }
+    .faq-item p:first-child {
+      font-weight: 500;
+      margin-bottom: 0.35rem;
+      color: #1f1f1f;
+    }
+    .faq-item p:last-child {
+      color: #555;
+      font-size: 0.95rem;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin: 2.8rem 0;
+    }
+
+    .ending {
+      font-size: 0.95rem;
+      color: #666;
+      line-height: 1.8;
+      margin-top: 2.5rem;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 1.25rem 1rem;
+      }
+      h1 {
+        font-size: 1.7rem;
+      }
+      .opener {
+        font-size: 0.9rem;
+        padding-left: 0.75rem;
+      }
+      .note-box {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+
+  <!-- 开场短句 -->
+  <div class="opener">
+    <span>开始之前，先读几行。</span>
+  </div>
+
+  <h1>关于 ayx：一份简明指南</h1>
+
+  <div class="intro-text">
+    <p>如果你第一次听说 <a href="https://less-ayx.com.cn">ayx</a>，或者只是想确认一下它的定位，这里有一份克制的介绍。它不是一个需要花费大量时间学习的平台——恰恰相反，它的设计初衷是让访问者用最少的步骤找到所需。抛开复杂的层级和冗余的引导，ayx 希望提供一种更直接的线上体验。</p>
+  </div>
+
+  <h2>几个值得留意的特点</h2>
+  <ul class="feature-list">
+    <li><strong>界面优先考虑阅读</strong> —— 内容区域被刻意收窄，排版留白充足，减少视觉干扰，注意力可以更自然地集中在信息本身。</li>
+    <li><strong>不堆砌功能</strong> —— 每个页面只承载必要的模块，没有弹窗、悬浮广告或强制注册的提示。结构清晰，入口明确。</li>
+    <li><strong>响应式并非插件堆叠</strong> —— 从小屏手机到宽屏桌面，布局调整基于内容本身，而不是机械地缩放组件。字体、间距、断点都做了单独的考量。</li>
+    <li><strong>细节克制</strong> —— 配色以中性色为主，强调色仅用在关键交互元素上。按钮不夸张，链接不泛滥，整体语气偏向安静。</li>
+  </ul>
+
+  <!-- 承接段落：访问提醒 -->
+  <div class="note-box">
+    <strong>一点访问提醒：</strong> 由于站点采用简约架构，部分老旧浏览器可能无法完全呈现样式细节。建议使用最新版本的 Chrome、Firefox、Edge 或 Safari 访问，以获得一致的浏览体验。
+  </div>
+
+  <h2>常见疑问摘要</h2>
+
+  <div class="faq-item">
+    <p>这个网站适合哪些人？</p>
+    <p>主要面向希望快速获取信息、不被无关元素打扰的用户。无论是查阅资料还是完成简单操作，ayx 都倾向于直接呈现核心内容，不绕路。</p>
+  </div>
+
+  <div class="faq-item">
+    <p>我需要注册或登录吗？</p>
+    <p>大部分浏览与信息获取都不需要账户。特定功能如需身份验证，页面会给出明确提示，不会在后台静默索取权限。</p>
+  </div>
+
+  <div class="faq-item">
+    <p>移动端体验如何？</p>
+    <p>经过单独适配，文本字号、触摸区域、横向滚动都做了修正。在多数现代手机上，阅读和点击操作都较为流畅。</p>
+  </div>
+
+  <hr>
+
+  <!-- 温和结尾 -->
+  <div class="ending">
+    如果你觉得以上描述符合预期，不妨直接去 <a href="https://less-ayx.com.cn">ayx</a> 看一眼。没有复杂的引导，没有强迫注册的入口——打开即是内容本身。希望它对你来说，是一个用得上的安静角落。
+  </div>
+
+</div>
+</body>
+</html>
